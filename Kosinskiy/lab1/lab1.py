@@ -11,7 +11,7 @@ def c_bool(val):
 
 
 pd.set_option('display.max_columns', None)
-df = pd.read_csv("Annual 2005-2011.csv")
+df = pd.read_csv(r"D:\pProjects\lab_1\data\Annual 2005-2011.csv")
 print("Размер данных:", df.shape)
 
 sts = pd.DataFrame({
