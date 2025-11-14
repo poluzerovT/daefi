@@ -222,7 +222,7 @@ print("4. ВИЗУАЛИЗАЦИЯ РЕЗУЛЬТАТОВ")
 plt.figure(figsize=(14, 12))
 mask = np.triu(np.ones_like(corr_matrix, dtype=bool))  # Маска для верхнего треугольника
 sns.heatmap(corr_matrix, mask=mask, annot=True, fmt='.2f', cmap='coolwarm',
-            center=0, square=True, linewidths=0.5, cbar_kws={'shrink': 0.8})
+            center=0, square=True, linewidths= 0.5, cbar_kws={'shrink': 0.8})
 plt.title('Матрица корреляций финансовых коэффициентов\n(аналог табл.2 методички)', fontsize=15, pad=20)
 plt.tight_layout()
 plt.show()
